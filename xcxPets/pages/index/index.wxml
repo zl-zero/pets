@@ -1,9 +1,37 @@
 <!--index.wxml-->
 <view class="container">
-  <scroll-view scroll-x style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" >
-    <view id="green" class="scroll-view-item bc_green"></view>
-    <view id="red"  class="scroll-view-item bc_red"></view>
-    <view id="yellow" class="scroll-view-item bc_yellow"></view>
-    <view id="blue" class="scroll-view-item bc_blue"></view>
-  </scroll-view>
+  <!--用户布局-->
+  <view class="userMain">
+    <view class="userInfo">
+      <view class="userHeader"></view>
+      <view class="userNick">
+        <view class="userNick_sub">1111111111</view>
+        <view class="userNick_week">周日  晴</view>
+      </view>
+    </view>
+  </view>
+
+  <!--我的宠物、健康提醒布局-->
+  <view class="pets">
+    <!--我的宠物-->
+    <view class="myPets" bindtap="tapPetsList">
+      <view class="petsTitle">
+        <image src="/images/icon/pets-icon.png"></image>
+        <view>我的爱宠</view>
+      </view>
+      <view class="petsIcon">
+        <image src="/images/icon/right-icon.png"></image>
+      </view>
+    </view>
+    <!--健康提醒-->
+    <view class="myPets myHealths" bindtap="tapHealthList">
+      <view class="petsTitle healthsTitle">
+        <image src="/images/icon/healths-icon.png"></image>
+        <view>健康提醒</view>
+      </view>
+      <view class="petsIcon healthsIcon">
+        <image src="/images/icon/right-icon.png"></image>
+      </view>
+    </view>
+  </view>
 </view>

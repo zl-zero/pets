@@ -22,5 +22,17 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  //跳转我的爱宠
+  tapPetsList:function(event){
+    wx.navigateTo({
+      url: '../pets/petsList',
+    })
+  },
+  //跳转健康提醒
+  tapHealthList:function(event){
+    wx.navigateTo({
+      url: '../heaths/heathsList',
+    })
   }
 })
