@@ -2,12 +2,19 @@
 <view class="container">
   <!--用户布局-->
   <view class="userMain">
+    <!--头部-->
     <view class="userInfo">
       <view class="userHeader"></view>
       <view class="userNick">
         <view class="userNick_sub">1111111111</view>
-        <view class="userNick_week">周日  晴</view>
+        <view class="userNick_week">周日</view>
       </view>
+    </view>
+    <!--底部-->
+    <view class="userBtp">
+      <view class="btp_sub1">添加爱宠</view>
+      <view class="btp_sub2">添加提醒</view>
+      <view class="btp_sub3">添加日记</view>
     </view>
   </view>
 

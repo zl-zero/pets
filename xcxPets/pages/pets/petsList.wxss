@@ -1,1 +1,54 @@
-/* petsList.wxss */
+.petsCard{
+  display: flex;
+  flex-direction: row;
+  border:1px solid #F2F2F2;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 90%;
+  height:50px;
+  padding:5px;
+  border-radius: 5px;
+  box-shadow:0px 1px 1px #D9D9D9 ;
+}
+.petsHeader{
+  width:40px;
+  height:40px;
+  border:1px solid black;
+  border-radius: 100%;
+  margin:auto 0;
+  margin-left: 10px;
+}
+
+.petsInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:85%;
+}
+
+.petsNick{
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  height: 100%;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.petsNick .nick{
+  line-height: 24px;
+}
+
+.petsNick .variety{
+  height: 100%;
+  line-height: 24px;
+  font-size: 14px;
+}
+.petsIcon{
+  margin: auto 0;
+}
+.petsIcon image{
+  width:20px;
+  height: 20px;
+}

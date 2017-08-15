@@ -1,5 +1,8 @@
 /**userMain 用户顶部布局**/
 .userMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width:90%;
   height: 130px;
   border:1px solid #F2F2F2;
@@ -49,6 +52,33 @@
   line-height: 50px;
   font-size: 16px;
   padding-right:20px;
+}
+
+/**添加事件**/
+.userBtp{
+  display: flex;
+  flex-direction: row;
+  border-top:1px solid #F2F2F2;
+  height: 24px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 29px;
+  padding-top: 2px;
+}
+
+.btp_sub1{
+  width:33%;
+  border-right:1px solid #F2F2F2;
+}
+
+.btp_sub2{
+  width:33%;
+border-right:1px solid #F2F2F2;
+}
+
+.btp_sub3{
+  width:33%;
+  border:0;
 }
 
 /**我的宠物、健康提醒**/

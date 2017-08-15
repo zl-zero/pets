@@ -1,2 +1,18 @@
-<!--petsList.wxml-->
-<text>petsList.wxml</text>
+<view class="container">
+  <scroll-view scroll-y>
+    <block>
+      <view class="petsCard" bindtap="tapDetail" data-id="1">
+        <view class="petsHeader"></view>
+        <view class="petsInfo">
+          <view class="petsNick">
+            <view class="nick">111</view>
+            <view class="variety">222</view>
+          </view>
+          <view class="petsIcon">
+            <image src="/images/icon/right-icon.png"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,4 +1,4 @@
-// petsList.js
+// petsDetail.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var id = options.id;
   },
 
   /**
@@ -62,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  tapDetail:function(event){
-    wx.navigateTo({
-      url: 'petsDetail?id=' + event.currentTarget.dataset.id,
-    })
   }
 })
