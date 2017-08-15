@@ -1,2 +1,32 @@
 <!--petsDetail.wxml-->
-<text>petsDetail.wxml</text>
+<view class="container">
+  <!--pets照片-->
+  <view class="flex flex-row userHeader" bindtap="tapPetsPhoto">
+    <view class="petsTitle">照片</view>
+    <view class="userRight">
+      <view class="userImage">
+        <image src="{{petsPhoto}}" mode="aspectFit"></image>
+      </view>
+      <view class="rightIcon">
+        <image src="/images/icon/right-icon.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--信息内容-->
+  <view class="flex flex-column petsInfo">
+    <view class="flex-row-between petsNick" bindtap="tapPetsNick">
+      <view class="petsTitle">11</view>
+      <view class="userRight">
+      <view class="petsName">22</view>
+      <view class="rightIcon">
+        <image src="/images/icon/right-icon.png"></image>
+      </view>
+      </view>
+    </view>
+  </view>
+
+  <!--模态框-->
+  <view class="{{showModel?'':'model'}}" bindtap="tapModel">
+      <view class="model-view"></view>
+  </view>
+</view>
