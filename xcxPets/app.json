@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/pets/petsDetail",
     "pages/index/index",
     "pages/pets/petsList",
+    "pages/pets/petsDetail",
     "pages/heaths/heathsList"
   ],
   "window": {

@@ -35,5 +35,10 @@ Page({
     wx.navigateTo({
       url: '../heaths/heathsList',
     })
+  },
+  tapSavePets:function(event){
+    wx.navigateTo({
+      url: '../pets/petsDetail',
+    })
   }
 })

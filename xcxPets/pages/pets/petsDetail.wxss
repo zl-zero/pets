@@ -27,7 +27,7 @@
 }
 
 .petsInfo{
-  height: 280px;
+  height: 240px;
 }
 
 .petsNick{
@@ -41,6 +41,39 @@
   margin:auto 0;
   font-size:16px;
   margin-right: 5px;
+}
+
+.petsSex picker{
+  width:100%;
+}
+
+.del-btn{
+  margin-top: 20%;
+  height:30px;
+  background: #FF392D;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 40px;
+}
+.del-btn text{
+  padding-left:20px;
+}
+
+.save-btn{
+  margin-top: 20%;
+  height:30px;
+  background: #54DDB7;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 40px;
+}
+
+.save-btn text{
+  padding-left:20px;
 }
 
 .model{
@@ -63,16 +96,61 @@
   height:100%;
   box-sizing: border-box;
   background-color: darkgrey;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   opacity: 0.5;
 }
-
+/*
+*弹窗布局
+*/
 .model-view{
-  width:70%;
-  height:18%;
+  position: fixed;
+  width:100%;
+  z-index: 2000;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.model-wrapper{
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    width: 80%;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.model-input{
+  width:90%;
+  height: 30%;
+  border: 1px solid darkgrey;
   margin: 0 auto;
-  margin-top: 40%;
-  border-radius: 2%;
-  background-color: white;
+  margin-top:20px;
+  border-radius: 5px;
+}
+.model-input input{
+  height: 100%;
+  padding-left:15px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.model-btn{
+  display: flex;
+  flex-direction: row;
+}
+
+.model-btn button{
+  font-size:14px;
+  width:40%;
+  margin-top: 3%;
+  color:white;
 }
 
 

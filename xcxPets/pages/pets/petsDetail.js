@@ -21,16 +21,30 @@ Page({
     weight:'',
     birthday:'',
     homeDate:'',
-    showModel:false
+    inputData:'',
+    inputField:'',
+    sexArray:['男','女'],
+    index:'',
+    varietyArray: [['无脊柱动物', '脊柱动物'], ['扁性动物', '线形动物', '环节动物', '软体动物', '节肢动物']],
+    varietyIndex:[],
+    showModel:false,
+    showBtn:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      id: options.id
-    })
+    if(options.id){
+      this.setData({
+        id: options.id,
+        showBtn:false
+      })
+    }else{
+      this.setData({
+        showBtn:true
+      })
+    }
   },
   /**
    * 更新信息
@@ -70,10 +84,55 @@ Page({
       })
     }
   },
-  tapPetsNick:function(event){
+  tapPetsModel:function(event){
     var that = this;
     that.setData({
+      inputData: event.currentTarget.dataset.val,
+      inputField: event.currentTarget.dataset.field,
       showModel:true
+    })
+  },
+  tapPetsSex:function(event){
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindMultiPickerChange:function(event){
+    this.setData({
+      varietyIndex: e.detail.value
+    })
+  },
+  bindMultiPickerColumnChange: function (e) {
+    var that = this;
+    console.log('修改的列为', e.detail.column, '，值为', e.detail.value);
+    var data = {
+      varietyArray: this.data.varietyArray,
+      varietyIndex: this.data.varietyIndex
+    };
+    data.varietyIndex[e.detail.column] = e.detail.value;
+    switch (e.detail.column) {
+      case 0:
+        switch (data.varietyIndex[e.detail.column]) {
+          case 0:
+            data.varietyArray[1] = ['1','2','3'];
+            break;
+          case 1:
+            data.varietyArray[1] = ['鱼', '两栖动物', '爬行动物'];
+            break;
+        }
+        data.varietyIndex[1] = 0;
+        break;
+    }
+    this.setData(data);
+  },
+  binBrithday:function(event){
+    this.setData({
+      birthday: event.detail.value
+    })
+  },
+  bindHomeDate: function (event) {
+    this.setData({
+      homeDate: event.detail.value
     })
   },
   tapModel:function(event){
@@ -81,5 +140,23 @@ Page({
     that.setData({
       showModel: false
     })
+  },
+  //更新保存
+  tapSave:function(event){
+  },
+  tapCancel:function(event){
+    this.setData({
+      showModel:false
+    })
+  },
+  //删除
+  tapDelete:function(event){
+
+  },
+  tapSavePets:function(event){
+    wx.navigateBack({
+      delta:2
+    })
   }
+
 })

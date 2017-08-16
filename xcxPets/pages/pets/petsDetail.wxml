@@ -14,7 +14,7 @@
   </view>
   <!--信息内容-->
   <view class="flex flex-column petsInfo">
-    <view class="flex-row-between petsNick" bindtap="tapPetsNick">
+    <view class="flex-row-between petsNick" bindtap="tapPetsModel" data-val="{{nick}}" data-field="nick">
       <view class="petsTitle">11</view>
       <view class="userRight">
       <view class="petsName">22</view>
@@ -23,10 +23,93 @@
       </view>
       </view>
     </view>
+    <!--性别-->
+    <picker bindchange="tapPetsSex" value="{{index}}" range="{{sexArray}}" data-field="sex" data-val="{{index}}" bindchange="tapSave">
+      <view class=" flex-row-between petsNick petsSex">
+          <view class="petsTitle">11</view>
+          <view class="userRight">
+            <view class="petsName">22</view>
+            <view class="rightIcon">
+              <image src="/images/icon/right-icon.png"></image>
+            </view>
+          </view>
+      </view>
+    </picker>
+    <!--品种-->
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" 
+    value="{{varietyIndex}}" range="{{varietyArray}}">
+      <view class=" flex-row-between petsNick petsSex">
+          <view class="petsTitle">11</view>
+          <view class="userRight">
+            <view class="petsName">22</view>
+            <view class="rightIcon">
+              <image src="/images/icon/right-icon.png"></image>
+            </view>
+          </view>
+      </view>
+    </picker>
+    <!--重量-->
+    <view class=" flex-row-between petsNick petsSex" bindtap="tapPetsModel" data-val="{{weight}}" data-field="weight">
+        <view class="petsTitle">11</view>
+        <view class="userRight">
+          <view class="petsName">22kg</view>
+          <view class="rightIcon">
+            <image src="/images/icon/right-icon.png"></image>
+          </view>
+        </view>
+    </view>
+    <!--生日-->
+    <picker mode="date" bindchange="binBrithday" value="{{birthday}}">
+      <view class=" flex-row-between petsNick petsSex">
+          <view class="petsTitle">11</view>
+          <view class="userRight">
+            <view class="petsName">{{birthday}}</view>
+            <view class="rightIcon">
+              <image src="/images/icon/right-icon.png"></image>
+            </view>
+          </view>
+      </view>
+    </picker>
+    <!--到家日期-->
+    <picker mode="date" bindchange="bindHomeDate" value="{{homeDate}}">
+      <view class=" flex-row-between petsNick petsSex" style="border:0;">
+          <view class="petsTitle">11</view>
+          <view class="userRight">
+            <view class="petsName">{{homeDate}}</view>
+            <view class="rightIcon">
+              <image src="/images/icon/right-icon.png"></image>
+            </view>
+          </view>
+      </view>
+    </picker>
   </view>
 
-  <!--模态框-->
-  <view class="{{showModel?'':'model'}}" bindtap="tapModel">
-      <view class="model-view"></view>
-  </view>
+  <block wx:if="{{!showBtn}}">
+    <view class="flex flex-column del-btn" bindtap="tapDelete">
+      <text>删除</text> 
+    </view>
+  </block>
+  <block wx:else>
+    <view class="flex flex-column save-btn" bindtap="tapSavePets">
+      <text>创建</text> 
+    </view>
+  </block>
+
+  <block wx:if="{{showModel}}">
+    <!--模态框-->
+    <view class="model" bindtap="tapModel">
+    </view>
+    <!--弹窗布局-->
+    <view class="model-view">
+      <view class="model-wrapper">
+        <view class="model-input">
+          <input value="{{inputData}}" focus confirm-type="done" bindconfirm="bindDone"/>
+        </view>
+        <view class="model-btn">
+          <button style="background:#54DDB7;" bindtap="tapSave">保    存</button>
+          <button style="background:#7F7F7F;" bindtap="tapCancel">取    消</button>
+        </view>
+      </view>
+    </view>
+  </block>
 </view>
