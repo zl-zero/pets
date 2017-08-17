@@ -48,6 +48,8 @@
 }
 
 .del-btn{
+  position: fixed;
+  bottom: 0px;
   margin-top: 20%;
   height:30px;
   background: #FF392D;
@@ -62,6 +64,8 @@
 }
 
 .save-btn{
+  position: fixed;
+  bottom: 0px;
   margin-top: 20%;
   height:30px;
   background: #54DDB7;
@@ -80,7 +84,6 @@
   position:  fixed;
   border:1px solid black;
   width:100%;
-
   margin:auto 0;
   font-size:16px;
   margin-right: 5px;

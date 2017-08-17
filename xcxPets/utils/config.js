@@ -1,5 +1,7 @@
 const obj = {
-  QINIU_URL: 'http://47.92.1.163:3010/system/upload/getUpToken'
+  QINIU_URL: 'http://47.92.1.163:3010/system/upload/getUpToken',
+  ADD_PETS:'pets',
+  ADD_DIARYS:'diarys'
 }
 
 module.exports = obj;

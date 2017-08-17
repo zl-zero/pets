@@ -12,9 +12,9 @@
     </view>
     <!--底部-->
     <view class="userBtp">
-      <view class="btp_sub1" bindtap="tapSavePets">添加爱宠</view>
+      <view class="btp_sub1" bindtap="tapAdd" data-val="pets">添加爱宠</view>
       <view class="btp_sub2">添加提醒</view>
-      <view class="btp_sub3">添加日记</view>
+      <view class="btp_sub3"  bindtap="tapAdd" data-val="diarys">添加日记</view>
     </view>
   </view>
 

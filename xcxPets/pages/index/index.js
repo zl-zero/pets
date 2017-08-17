@@ -1,19 +1,15 @@
 //index.js
+const config = require("../../utils/config");
 //获取应用实例
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
   },
   onLoad: function () {
-    console.log('onLoad')
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
@@ -36,9 +32,19 @@ Page({
       url: '../heaths/heathsList',
     })
   },
-  tapSavePets:function(event){
-    wx.navigateTo({
-      url: '../pets/petsDetail',
-    })
+  //添加页面跳转
+  tapAdd:function(event){
+    switch(event.currentTarget.dataset.val){
+      case config.ADD_PETS:
+        wx.navigateTo({
+          url: '../pets/petsDetail',
+        });
+        break;
+      case config.ADD_DIARYS:
+        wx.navigateTo({
+          url: '../diarys/addDiarys',
+        });
+        break;
+    }
   }
 })

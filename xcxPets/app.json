@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/heaths/heathsList",
     "pages/index/index",
+    "pages/diarys/addDiarys",
     "pages/pets/petsList",
-    "pages/pets/petsDetail",
-    "pages/heaths/heathsList"
+    "pages/pets/petsDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
