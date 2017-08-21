@@ -5,9 +5,9 @@
   </view>
   <!--图片、视频上传-->
   <view class="diarys-img-vid">
-    <view class="add-icon" bindtap="tapIV">
-      <image wx:if="{{showIV==0}}" src="/images/icon/add-icon.png"></image>
-      <image wx:elif="{{showIV==1}}" src="{{lifePhoto}}"></image>
+    <view class="add-icon" >
+      <image wx:if="{{showIV==1}}" src="{{lifePhoto}}" bindtap="tapPreviewImg"></image>
+      <image src="/images/icon/add-icon.png" bindtap="tapIV"></image>
       <!-- <video wx:else src="{{lifeVideo}}" ></video> -->
     </view>
   </view>

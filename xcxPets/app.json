@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/heaths/heathsList",
+    "pages/heaths/addHeaths",
     "pages/index/index",
+    "pages/heaths/heathsList",
     "pages/diarys/addDiarys",
     "pages/pets/petsList",
     "pages/pets/petsDetail"

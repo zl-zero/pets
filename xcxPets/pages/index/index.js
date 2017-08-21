@@ -45,6 +45,11 @@ Page({
           url: '../diarys/addDiarys',
         });
         break;
+      case config.ADD_HEATHS:
+        wx.navigateTo({
+          url: '../heaths/addHeaths',
+        });
+        break;
     }
   }
 })
