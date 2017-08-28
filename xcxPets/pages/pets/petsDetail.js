@@ -94,7 +94,7 @@ Page({
   },
   tapPetsSex:function(event){
     this.setData({
-      index: e.detail.value
+      index: event.detail.value
     })
   },
   bindMultiPickerChange:function(event){

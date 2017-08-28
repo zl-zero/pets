@@ -36,3 +36,25 @@
   line-height: 24px;
   font-size: 14px;
 }
+
+.rightIcon checkbox{
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+.save-btn{
+  position: fixed;
+  bottom: 0px;
+  margin-top: 20%;
+  height:30px;
+  background: #54DDB7;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 40px;
+}
+
+.save-btn text{
+  padding-left:20px;
+}

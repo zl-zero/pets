@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    indexHeaths:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      indexHeaths:options.heaths
+    })
   },
 
   /**
@@ -66,6 +68,21 @@ Page({
   tapDetail:function(event){
     wx.navigateTo({
       url: 'petsDetail?id=' + event.currentTarget.dataset.id,
+    })
+  },
+  checkboxChange:function(event){
+
+  },
+  tapSavePets:function(event){
+    var pages = getCurrentPages();
+    var currPage = pages[pages.length - 1];   //当前页面
+    var prevPage = pages[pages.length - 2];  //上一个页面
+
+    //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+    prevPage.setData({
+    })
+    wx.navigateBack({
+      delta: 1
     })
   }
 })

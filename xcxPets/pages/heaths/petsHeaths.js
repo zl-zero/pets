@@ -1,17 +1,11 @@
-// addHeaths.js
+// petsHeaths.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nick: '',
-    heathsArray: ['洗澡', '剪指甲'],
-    index:'',
-    dates:'',
-    dateTimes:'',
-    daysArray: ['提前1天提醒', '提前2天提醒','提前3天提醒'],
-    dayIndex:''
+  
   },
 
   /**
@@ -68,30 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  tapPets:function(){
-    wx.navigateTo({
-      url: '/pages/pets/petsList?heaths=1',
-    })
-  },
-  tapPetsHeaths: function (event){
-    this.setData({
-      index: event.detail.value
-    })
-  },
-  tapDateChanges:function(event){
-    this.setData({
-      dates: event.detail.value
-    })
-  },
-  tapDateTimeChanges:function(event){
-    this.setData({
-      dateTimes: event.detail.value
-    })
-  },
-  tapDaysChanges:function(event){
-    this.setData({
-      dayIndex: event.detail.value
-    })
   }
 })

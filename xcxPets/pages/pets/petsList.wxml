@@ -1,6 +1,6 @@
 <view class="container">
   <scroll-view scroll-y>
-    <block>
+    <block wx:if="{{indexHeaths==0}}">
       <view class="flex flex-row petsCard" bindtap="tapDetail" data-id="1">
         <view class="petsHeader"></view>
         <view class="petsInfo">
@@ -12,6 +12,23 @@
             <image src="/images/icon/right-icon.png"></image>
           </view>
         </view>
+      </view>
+    </block>
+    <block wx:else>
+      <checkbox-group class="flex flex-row petsCard" bindchange="checkboxChange">
+        <view class="petsHeader"></view>
+        <view class="petsInfo">
+          <view class="petsNick">
+            <view class="nick">111</view>
+            <view class="variety">222</view>
+          </view>
+          <view class="rightIcon">
+            <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+          </view>
+        </view>
+      </checkbox-group>
+      <view class="flex flex-column save-btn" bindtap="tapSavePets">
+        <text>确定</text> 
       </view>
     </block>
   </scroll-view>

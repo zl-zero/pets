@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/heaths/addHeaths",
     "pages/index/index",
+    "pages/pets/petsList",
+    "pages/heaths/petsHeaths",
+    "pages/heaths/addHeaths",
     "pages/heaths/heathsList",
     "pages/diarys/addDiarys",
-    "pages/pets/petsList",
     "pages/pets/petsDetail"
   ],
   "window": {

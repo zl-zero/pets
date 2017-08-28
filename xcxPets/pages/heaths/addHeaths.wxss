@@ -1,1 +1,28 @@
-/* addHeaths.wxss */
+.petsTitle{
+  margin: auto 0;
+  margin-left:10px;
+  font-size: 16px;
+}
+
+.userRight{
+  display: flex;
+  flex-direction: row;
+}
+.userHeader{
+  justify-content: space-between;
+  height:50px;
+}
+
+.petsName{
+  margin:auto 0;
+  font-size:16px;
+  margin-right: 5px;
+}
+
+.rightIcon{
+  line-height: 10px;
+}
+
+picker{
+  width:100%;
+}

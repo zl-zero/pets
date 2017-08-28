@@ -1,5 +1,59 @@
 <view class="container">
-  <view class="flex flex-row">
-  
+  <view class="flex flex-row flex-row-between" bindtap="tapPets">
+      <view class="petsTitle">11</view>
+      <view class="userRight">
+        <view class="petsName">22</view>
+        <view class="rightIcon">
+          <image src="/images/icon/right-icon.png"></image>
+        </view>
+      </view>
   </view>
+  <!--提醒类别-->
+  <picker bindchange="tapPetsHeaths" value="{{index}}" range="{{heathsArray}}" data-field="heaths" data-val="{{index}}">
+      <view class="flex flex-row flex-row-between">
+        <view class="petsTitle">11</view>
+        <view class="userRight">
+          <view class="petsName">{{heathsArray[index]}}</view>
+          <view class="rightIcon">
+            <image src="/images/icon/right-icon.png"></image>
+          </view>
+        </view>
+    </view>
+  </picker>
+  <!--计划日期-->
+  <picker bindchange="tapDateChanges" value="{{dates}}" mode="date" >
+      <view class="flex flex-row flex-row-between">
+        <view class="petsTitle">11</view>
+        <view class="userRight">
+          <view class="petsName">{{dates}}</view>
+          <view class="rightIcon">
+            <image src="/images/icon/right-icon.png"></image>
+          </view>
+        </view>
+    </view>
+  </picker>
+  <!--计划时间-->
+  <picker bindchange="tapDateTimeChanges" value="{{dateTimes}}" mode="time" >
+      <view class="flex flex-row flex-row-between">
+        <view class="petsTitle">11</view>
+        <view class="userRight">
+          <view class="petsName">{{dateTimes}}</view>
+          <view class="rightIcon">
+            <image src="/images/icon/right-icon.png"></image>
+          </view>
+        </view>
+    </view>
+  </picker>
+  <!--提前提醒时间-->
+  <picker bindchange="tapDaysChanges" value="{{dayIndex}}" range="{{daysArray}}" data-field="days" data-val="{{dayIndex}}">
+      <view class="flex flex-row flex-row-between">
+        <view class="petsTitle">11</view>
+        <view class="userRight">
+          <view class="petsName">{{daysArray[dayIndex]}}</view>
+          <view class="rightIcon">
+            <image src="/images/icon/right-icon.png"></image>
+          </view>
+        </view>
+    </view>
+  </picker>
 </view>
