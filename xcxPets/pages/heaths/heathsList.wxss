@@ -1,1 +1,85 @@
-/* heathsList.wxss */
+.contents{
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  padding:5px;
+}
+
+.pets{
+  display: flex;
+  height: 80px;
+}
+
+.pets-icons{
+  width: 80px;
+  height: 100%;
+  margin: 0 auto ;
+}
+
+.pets-headers{
+  border-radius: 100%;
+  background:gainsboro;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.pets-nick{
+  margin: 0 auto;
+  align-content: center;
+  width:  fit-content;
+  font-size: 16px;
+  margin-top:5px;
+}
+
+.reminds-back{
+  background: #F5F5F6;
+  border-radius: 5px;
+}
+
+.reminds{
+  margin:0 auto;
+}
+.reminds-title{
+  display: flex;
+  width: 100%;
+  height: 20px;
+}
+
+.reminds-title image{
+  width:20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.reminds-title view{
+  font-size:16px;
+  color:  #9B9EA0;
+  width:fit-content;
+}
+
+.reminds-times{
+  margin: 0 auto;
+  margin-top:5px;
+}
+
+.reminds-interval{
+  color:red;
+  font-size: 16px;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.btns view{
+  width: 60px;
+  text-align: center;
+  font-size: 12px;
+  background: #54DDB7;
+  padding:5px;
+  margin-left: 20px;
+  color: white;
+  border-radius: 5px;
+}

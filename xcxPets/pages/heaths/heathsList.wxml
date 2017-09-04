@@ -1,2 +1,32 @@
 <view class="container">
+  <scroll-view scroll-y>
+    <block>
+      <view class="flex flex-column">
+        <view class="contents flex-column">
+          <view class="pets flex-row">
+          <view class="pets-icons">
+            <view class="pets-headers"></view>
+            <view class="pets-nick">111</view>
+          </view>
+          </view>
+        </view>
+        <view class="contents flex-column reminds-back">
+          <view class="reminds">
+            <view class="reminds-title flex-row">
+                <image src="/images/icon/times-icon.png"></image>
+                <view >111</view>
+            </view>
+          </view>
+          <view class="reminds-times">2222</view>
+          <view class="reminds-times reminds-interval">3333</view>
+        </view>
+        <view class="contents flex-row">
+          <view class="btns">
+            <view class="finish">完        成</view>
+            <view class="close">关         闭</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
 </view>
