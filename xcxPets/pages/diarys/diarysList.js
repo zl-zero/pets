@@ -1,4 +1,4 @@
-// petsHeaths.js
+// diarysList.js
 Page({
 
   /**

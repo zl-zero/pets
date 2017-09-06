@@ -1,0 +1,42 @@
+.cd-container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #F2F2F2;
+  margin-top:5px;
+}
+
+.diary-date{
+  display: flex;
+  flex-direction: row;
+}
+
+.diary-date image{
+  width:20px;
+  height: 20px;
+  margin-left: 5%;
+  margin-top:2px;
+}
+.diary-date view{
+  font-size: 14px;
+  color: darkgray;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.descriptions{
+  font-size:14px;
+  margin-left: 7%;
+  margin-top:5px;
+}
+
+.diary-img{
+  display: flex;
+  width: 99%;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+
+.diary-img image{
+  margin: 0 auto;
+}

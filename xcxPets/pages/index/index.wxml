@@ -31,10 +31,20 @@
       </view>
     </view>
     <!--健康提醒-->
-    <view class="myPets myHealths" bindtap="tapHealthList">
+    <view class="myPets " bindtap="tapHealthList">
       <view class="petsTitle healthsTitle">
         <image src="/images/icon/healths-icon.png"></image>
         <view>健康提醒</view>
+      </view>
+      <view class="petsIcon healthsIcon">
+        <image src="/images/icon/right-icon.png"></image>
+      </view>
+    </view>
+    <!--我的日记-->
+    <view class="myPets diary" bindtap="tapDiaryList">
+      <view class="petsTitle">
+        <image src="/images/icon/diary-icon.png"></image>
+        <view>我的日记</view>
       </view>
       <view class="petsIcon healthsIcon">
         <image src="/images/icon/right-icon.png"></image>

@@ -32,6 +32,11 @@ Page({
       url: '../heaths/heathsList',
     })
   },
+  tapDiaryList:function(event){
+    wx.navigateTo({
+      url: '../diarys/diarysList',
+    })
+  },
   //添加页面跳转
   tapAdd:function(event){
     switch(event.currentTarget.dataset.val){

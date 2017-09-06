@@ -1,0 +1,18 @@
+<view class="container">
+  <scroll-view scroll-y>
+    <block>
+      <view class="cd-container">
+        <view class="descriptions">
+          描述
+        </view>
+        <view class="diary-img">
+          <image src="https://pic.36krcnd.com/201709/05090103/0lllpbwcffjhbozu!1200"></image>
+        </view>
+        <view class="diary-date">
+          <image src="/images/icon/times-icon.png"></image>
+          <view>2017-8-11 12:00</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

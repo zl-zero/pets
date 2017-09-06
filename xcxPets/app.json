@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/pets/petsList",
-    "pages/heaths/petsHeaths",
-    "pages/heaths/addHeaths",
+    "pages/diarys/diarysList",
     "pages/heaths/heathsList",
+    "pages/pets/petsList",
+    "pages/heaths/addHeaths",
     "pages/diarys/addDiarys",
     "pages/pets/petsDetail"
   ],
